@@ -11,6 +11,9 @@ const APP_DIR = path.resolve(__dirname, "src/client");
 const config = {
   entry: APP_DIR + "/App.jsx",
   devtool: false,
+  resolve: {
+    extensions: [".js", ".jsx"]
+  },
   output: {
     path: BUILD_DIR,
     filename: "[name].[contenthash].js",
